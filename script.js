@@ -17,13 +17,13 @@ function tocarMusica() {
 const romanticQuotes = [
     {
         text: "Você me faz querer ser invencivel",
-        author: " Shrek (para Fiona)",
+        author: "mark",
         image: "img-frase/inve.png"
     },
     {
-        text: "Com você, a vida é uma aventura.",
-        author: "Carl Fredricksen, em Up: Altas Aventura",
-        image: "img-frase/up.jpg"
+        text: "Entre bilhões de estrelas, eu escolheria você.",
+        author: "Robin",
+        image: "img-frase/robin.png"
     },
     {
         text: "Te amo até o infinito... e além!",
@@ -47,13 +47,13 @@ const romanticQuotes = [
     },
     {
         text: "Você é a minha melhor volta nessa corrida maluca chamada vida.",
-        author: "mcquuen",
+        author: "mcqueen",
         image: "img-frase/mcqueen.jpeg"
     },
     {
-        text: "É você quem vive em mim.",
-        author: "Simba & Nala – O Rei Leão",
-        image: "img-frase/leao.jpeg"
+        text: "Entre aliens e fantasmas, o mais assustador é ficar sem você",
+        author: "Dandadan",
+        image: "img-frase/dandadan.png"
     }
 ];
 
