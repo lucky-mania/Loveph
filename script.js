@@ -16,9 +16,9 @@ function tocarMusica() {
 // Dados das frases românticas com personagens
 const romanticQuotes = [
     {
-        text: "Você me completa.",
+        text: "Você me faz querer ser invencivel",
         author: " Shrek (para Fiona)",
-        image: "img-frase/shrek.jpeg"
+        image: "img-frase/inve.png"
     },
     {
         text: "Com você, a vida é uma aventura.",
