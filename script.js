@@ -148,21 +148,38 @@ function initializeFloatingHearts() {
 }
 
 function initializeRelationshipTimer() {
-    function updateTimer() {
-        const years = 1;
-        const months = 3;
-        const days = 1;
-        const hours = 1;
 
-        // Atualiza os elementos do HTML
+    // DATA QUE VOCÊS COMEÇARAM A NAMORAR
+    // Ano, mês (0 = janeiro), dia, hora
+    const startDate = new Date(2025, 8, 6, 16, 0, 0);
+
+    function updateTimer() {
+        const now = new Date();
+
+        // Diferença em milissegundos
+        const diff = now - startDate;
+
+        // Conversões
+        const totalHours = Math.floor(diff / (1000 * 60 * 60));
+        const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+        // Cálculo aproximado
+        const years = Math.floor(totalDays / 365);
+        const months = Math.floor((totalDays % 365) / 30);
+        const days = Math.floor((totalDays % 365) % 30);
+        const hours = totalHours % 24;
+
+        // Atualiza HTML
         document.getElementById('years').textContent = years;
         document.getElementById('months').textContent = months;
         document.getElementById('days').textContent = days;
         document.getElementById('hours').textContent = hours;
     }
 
-    updateTimer(); // Atualiza imediatamente
-    setInterval(updateTimer, 60 * 1000); // Mantém a estrutura ativa, caso queira alterar futuramente
+    updateTimer();
+
+    // Atualiza a cada minuto
+    setInterval(updateTimer, 1000 * 60);
 }
 
 initializeRelationshipTimer();
